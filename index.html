@@ -5,21 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Count Down</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <div id="countdown">
-        <div id="tiles">
-            <span>0</span>
-            <span>0</span>
-            <span>0</span>
-            <span>0</span>
-        </div>
-        <div class="labels">
-            <li>Days</li>
-            <li>Hours</li>
-            <li>Mins</li>
-            <li>Secs</li>
+    <div class="container">
+        <h1>Days Until You Are Here</h1>
+        <div id="countdown">
+            <div id="tiles">
+                <span id="days">0</span>
+                <span id="hours">0</span>
+                <span id="mins">0</span>
+                <span id="secs">0</span>
+            </div>
+            <div class="labels">
+                <li>Days</li>
+                <li>Hours</li>
+                <li>Mins</li>
+                <li>Secs</li>
+            </div>
         </div>
     </div>
+    <!-- make function startup on page load -->
+    <script>
+        startCountdown();
+    </script>
 </body>
 </html>
